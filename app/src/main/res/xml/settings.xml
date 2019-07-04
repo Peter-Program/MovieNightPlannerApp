@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:title="Check box preference" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:title="Switch preference" />
+    <ListPreference
+        android:defaultValue="true"
+        android:entries="@array/notification_threshold_names"
+        android:entryValues="@array/notification_threshold_values"
+        android:key="@string/PREF_NOTIFICATION_THRESHOLD"
+        android:summary="%s"
+        android:title="@string/notification_threshold_title" />
+    <EditTextPreference
+        android:defaultValue="5"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:key="edit_text_preference_1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <Preference
+        android:key="preference_test"
+        android:title="Preference Test"
+        android:summary="Hello World"
+        android:defaultValue="10"/>
+
+</PreferenceScreen>
